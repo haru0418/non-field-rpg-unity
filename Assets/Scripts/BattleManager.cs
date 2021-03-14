@@ -6,16 +6,29 @@ using UnityEngine;
 public class BattleManager : MonoBehaviour
 {
     public PlayerManager player;
-    public EnemyManager enemy;
+    EnemyManager enemy;
     public PlayerUIManager playerUI;
     public EnemyUIManager enemyUI;
 
-    void Start()
+
+    public void Setup(EnemyManager enemyManager)
+    {
+        enemy = enemyManager;
+        enemyUI.SetupUI(enemy);
+        playerUI.SetupUI(player);
+    }
+
+    void PlayerAttack()
     {
         player.Attack(enemy);
         playerUI.UpdateUI(player);
 
+    }
+
+    void EnemyAttack()
+    {
         enemy.Attack(player);
         enemyUI.UpdateUI(enemy);
+
     }
 }
