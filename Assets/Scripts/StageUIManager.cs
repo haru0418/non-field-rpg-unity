@@ -7,10 +7,24 @@ using UnityEngine.UI;
 public class StageUIManager : MonoBehaviour
 {
     public Text stageText;
+    public GameObject nextButton;
+    public GameObject backButton;
 
     public void UpdateUI(int currentStage)
     {
         stageText.text = string.Format("ステージ : {0}", currentStage+1);
-        //stageText.text = currentStage.ToString();
+        
+    }
+
+    public void Hidebuttons()
+    {
+        nextButton.SetActive(false);
+        backButton.SetActive(false);
+    }
+
+    public void Showbuttons()
+    {
+        nextButton.SetActive(true);
+        backButton.SetActive(true);
     }
 }
