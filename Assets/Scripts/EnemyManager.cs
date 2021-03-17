@@ -1,10 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 //敵を管理
 public class EnemyManager : MonoBehaviour
 {
+    Action tapAction;
     public new string name;
     public int hp;
     public int at;
@@ -17,11 +17,17 @@ public class EnemyManager : MonoBehaviour
     public void Damage(int damage)
     {
         hp -= damage;
-        Debug.Log("プレイヤーのHPは" + hp);
+        Debug.Log("モンスターのHPは" + hp);
+    }
+
+    public void AddEventListenerOnTap(Action action)
+    {
+        tapAction += action;
     }
 
     public void OnTap()
     {
+        tapAction();
         Debug.Log("クリック");
     }
 }

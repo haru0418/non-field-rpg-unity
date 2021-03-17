@@ -16,6 +16,7 @@ public class BattleManager : MonoBehaviour
         enemy = enemyManager;
         enemyUI.SetupUI(enemy);
         playerUI.SetupUI(player);
+        enemy.AddEventListenerOnTap(PlayerAttack);
     }
 
     void PlayerAttack()
