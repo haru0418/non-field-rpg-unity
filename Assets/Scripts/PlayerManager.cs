@@ -10,7 +10,10 @@ public class PlayerManager : MonoBehaviour
     public void Attack(EnemyManager enemy)
     {
         enemy.Damage(at);
-        Debug.Log("モンスターに攻撃された");
+        if (hp <= 0)
+        {
+            hp = 0;
+        }
     }
 
     public void Damage(int damage)

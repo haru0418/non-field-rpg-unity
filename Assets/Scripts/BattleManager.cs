@@ -23,6 +23,15 @@ public class BattleManager : MonoBehaviour
     {
         player.Attack(enemy);
         enemyUI.UpdateUI(enemy);
+        if (enemy.hp <= 0)
+        {
+            Destroy(enemy.gameObject);
+            EndBattle();
+        }
+        else
+        {
+            EnemyAttack();
+        }
     }
 
     void EnemyAttack()
@@ -32,4 +41,8 @@ public class BattleManager : MonoBehaviour
 
     }
 
+    void EndBattle()
+    {
+        Debug.Log("バトル終了");
+    }
 }
