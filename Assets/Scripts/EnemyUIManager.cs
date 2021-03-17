@@ -11,12 +11,12 @@ public class EnemyUIManager : MonoBehaviour
     public void SetupUI(EnemyManager enemy)
     {
         hpText.text = string.Format("HP : {0}", enemy.hp);
-        nameText.text = string.Format("名前 : {0}", enemy.name);
+        nameText.text = string.Format("{0}", enemy.name);
     }
 
     public void UpdateUI(EnemyManager enemy)
     {
         hpText.text = string.Format("HP : {0}", enemy.hp);
-
+        nameText.text = string.Format("{0}", enemy.name);
     }
 }
