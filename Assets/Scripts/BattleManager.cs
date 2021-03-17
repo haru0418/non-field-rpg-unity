@@ -22,14 +22,14 @@ public class BattleManager : MonoBehaviour
     void PlayerAttack()
     {
         player.Attack(enemy);
-        playerUI.UpdateUI(player);
-
+        enemyUI.UpdateUI(enemy);
     }
 
     void EnemyAttack()
     {
         enemy.Attack(player);
-        enemyUI.UpdateUI(enemy);
+        playerUI.UpdateUI(player);
 
     }
+
 }
