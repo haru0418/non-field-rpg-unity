@@ -9,10 +9,17 @@ public class BattleManager : MonoBehaviour
     EnemyManager enemy;
     public PlayerUIManager playerUI;
     public EnemyUIManager enemyUI;
+    public QuestManager questManager;
+
+    private void Start()
+    {
+        enemyUI.gameObject.SetActive(false);
+    }
 
 
     public void Setup(EnemyManager enemyManager)
     {
+        enemyUI.gameObject.SetActive(true);
         enemy = enemyManager;
         enemyUI.SetupUI(enemy);
         playerUI.SetupUI(player);
@@ -25,6 +32,7 @@ public class BattleManager : MonoBehaviour
         enemyUI.UpdateUI(enemy);
         if (enemy.hp <= 0)
         {
+            enemyUI.gameObject.SetActive(false);
             Destroy(enemy.gameObject);
             EndBattle();
         }
@@ -43,6 +51,6 @@ public class BattleManager : MonoBehaviour
 
     void EndBattle()
     {
-        Debug.Log("バトル終了");
+        questManager.Endbattle();
     }
 }
