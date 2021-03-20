@@ -9,6 +9,12 @@ public class StageUIManager : MonoBehaviour
     public Text stageText;
     public GameObject nextButton;
     public GameObject backButton;
+    public GameObject stageClearText;
+
+    private void Start()
+    {
+        stageClearText.SetActive(false);
+    }
 
     public void UpdateUI(int currentStage)
     {
@@ -25,6 +31,13 @@ public class StageUIManager : MonoBehaviour
     public void Showbuttons()
     {
         nextButton.SetActive(true);
+        backButton.SetActive(true);
+    }
+
+    public void ShowClearText()
+    {
+        stageClearText.SetActive(true);
+        nextButton.SetActive(false);
         backButton.SetActive(true);
     }
 }

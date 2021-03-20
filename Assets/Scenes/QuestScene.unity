@@ -735,6 +735,7 @@ MonoBehaviour:
   enemyPrefeb: {fileID: 9033898669764921327, guid: a1a92c7621e1d4423b5c317d8ac153da,
     type: 3}
   battleManager: {fileID: 2035673058}
+  sceneTransitionManager: {fileID: 891886596}
 --- !u!4 &549344156
 Transform:
   m_ObjectHideFlags: 0

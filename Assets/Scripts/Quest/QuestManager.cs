@@ -53,6 +53,7 @@ public class QuestManager : MonoBehaviour
 
     void QuestClear()
     {
-        sceneTransitionManager.LoadTo("TownScene");
+        stageUI.ShowClearText();
+        //sceneTransitionManager.LoadTo("TownScene");
     }
 }
