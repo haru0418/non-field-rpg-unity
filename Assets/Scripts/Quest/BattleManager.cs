@@ -29,6 +29,7 @@ public class BattleManager : MonoBehaviour
 
     void PlayerAttack()
     {
+        StopAllCoroutines();
         SoundManager.instance.PlaySE(1);
         player.Attack(enemy);
         enemyUI.UpdateUI(enemy);
@@ -40,13 +41,14 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
-            EnemyAttack();
+            StartCoroutine(EnemyAttack());
         }
     }
 
-    void EnemyAttack()
+    IEnumerator EnemyAttack()
     {
-        //SoundManager.instance.PlaySE(1);
+        yield return new WaitForSeconds(1f);
+        SoundManager.instance.PlaySE(1);
         enemy.Attack(player);
         playerUI.UpdateUI(player);
 
