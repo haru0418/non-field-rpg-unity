@@ -127,6 +127,8 @@ MonoBehaviour:
   name: test
   hp: 100
   at: 10
+  hitEffect: {fileID: 2915110809097009346, guid: 3710d6bb627e44c109b3198e7fd4c806,
+    type: 3}
 --- !u!61 &-8038576866890478615
 BoxCollider2D:
   m_ObjectHideFlags: 0
