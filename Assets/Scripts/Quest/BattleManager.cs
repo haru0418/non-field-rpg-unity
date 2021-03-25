@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 //プレイヤーとエネミーの対戦管理
 public class BattleManager : MonoBehaviour
 {
+    public Transform cameraObj;
     public PlayerManager player;
     EnemyManager enemy;
     public PlayerUIManager playerUI;
@@ -25,6 +27,9 @@ public class BattleManager : MonoBehaviour
         enemyUI.SetupUI(enemy);
         playerUI.SetupUI(player);
         enemy.AddEventListenerOnTap(PlayerAttack);
+
+
+
     }
 
     void PlayerAttack()
@@ -49,6 +54,7 @@ public class BattleManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         SoundManager.instance.PlaySE(1);
+        cameraObj.DOShakePosition(0.3f, 0.5f, 20, 0, false, true);
         enemy.Attack(player);
         playerUI.UpdateUI(player);
 
