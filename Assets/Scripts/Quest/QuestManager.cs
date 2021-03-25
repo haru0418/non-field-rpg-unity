@@ -21,8 +21,7 @@ public class QuestManager : MonoBehaviour
 
     }
 
-    //Nextボタンが押されたら
-    public void OnNextButton()
+    IEnumerator Seaching()
     {
         //背景を大きく
         questBG.transform.DOScale(new Vector3(1.5f, 1.5f, 1.5f), 2f)
@@ -31,8 +30,10 @@ public class QuestManager : MonoBehaviour
         SpriteRenderer questBGSpriteRenderer = questBG.GetComponent<SpriteRenderer>();
         questBGSpriteRenderer.DOFade(0, 2f)
             .OnComplete(() => questBGSpriteRenderer.DOFade(1, 0));
+        //
+        yield return new WaitForSeconds(2f);
 
-        SoundManager.instance.PlaySE(0);
+        
         currentStage++;
         //進行度をUIに反映
         stageUI.UpdateUI(currentStage);
@@ -45,8 +46,19 @@ public class QuestManager : MonoBehaviour
         else if (encountTable[currentStage] == 0)
         {
             EncountEnemy();
-            
         }
+        else
+        {
+            stageUI.Showbuttons();
+        }
+    }
+
+    //Nextボタンが押されたら
+    public void OnNextButton()
+    {
+        SoundManager.instance.PlaySE(0);
+        stageUI.Hidebuttons();
+        StartCoroutine (Seaching());
     }
     public void OnToTownButton()
     {
