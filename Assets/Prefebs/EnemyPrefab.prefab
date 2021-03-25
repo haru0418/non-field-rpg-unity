@@ -124,9 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e991d8dae423f4b63887a9c658f15ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: test
-  hp: 100
-  at: 10
+  name: "\u30D5\u30A1\u30A4\u30E4\u30FC"
+  hp: 50
+  at: 5
   hitEffect: {fileID: 2915110809097009346, guid: 3710d6bb627e44c109b3198e7fd4c806,
     type: 3}
 --- !u!61 &-8038576866890478615

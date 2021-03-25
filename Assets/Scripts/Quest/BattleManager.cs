@@ -35,6 +35,7 @@ public class BattleManager : MonoBehaviour
     void PlayerAttack()
     {
         StopAllCoroutines();
+        DialogTextManager.instance.SetScenarios(new string[] { "プレイヤーの攻撃" });
         SoundManager.instance.PlaySE(1);
         player.Attack(enemy);
         enemyUI.UpdateUI(enemy);
@@ -55,6 +56,7 @@ public class BattleManager : MonoBehaviour
         cameraObj.DOShakePosition(0.3f, 0.5f, 20, 0, false, true);
         enemy.Attack(player);
         playerUI.UpdateUI(player);
+        DialogTextManager.instance.SetScenarios(new string[] { "モンスターの攻撃" });
 
     }
 
