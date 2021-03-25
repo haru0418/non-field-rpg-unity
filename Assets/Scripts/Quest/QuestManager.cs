@@ -89,4 +89,9 @@ public class QuestManager : MonoBehaviour
         stageUI.ShowClearText();
         //sceneTransitionManager.LoadTo("TownScene");
     }
+
+    public void PlayerDeath()
+    {
+        sceneTransitionManager.LoadTo("TownScene");
+    }
 }

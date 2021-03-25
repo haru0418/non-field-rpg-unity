@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "\u30D5\u30A1\u30A4\u30E4\u30FC"
   hp: 50
-  at: 5
+  at: 50
   hitEffect: {fileID: 2915110809097009346, guid: 3710d6bb627e44c109b3198e7fd4c806,
     type: 3}
 --- !u!61 &-8038576866890478615

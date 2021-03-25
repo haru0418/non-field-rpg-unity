@@ -16,6 +16,7 @@ public class BattleManager : MonoBehaviour
     private void Start()
     {
         enemyUI.gameObject.SetActive(false);
+        playerUI.SetupUI(player);
     }
 
 
@@ -57,6 +58,10 @@ public class BattleManager : MonoBehaviour
         enemy.Attack(player);
         playerUI.UpdateUI(player);
         DialogTextManager.instance.SetScenarios(new string[] { "モンスターの攻撃" });
+        if (player.hp <= 0)
+        {
+            questManager.PlayerDeath();
+        }
 
     }
 
