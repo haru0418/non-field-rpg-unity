@@ -38,16 +38,19 @@ BGMも流れています。
 ## 使用技術（開発環境）
 
 ### ソース管理
-Git, GitHub Desktop、 Unity、 sourcetree
+Git<br> 
+GitHub Desktop<br>
+Unity<br>
+sourcetree<br>
 
 ### エディタ
 Visual Studio
 
 ### Asset
-Cartoon FX Free
-DOTween (HOTween v2)
-Fantasy Wooden GUI : Free
-Aekashics Librarium - MegapackⅢ
+Cartoon FX Free<br>
+DOTween (HOTween v2)<br>
+Fantasy Wooden GUI : Free<br>
+Aekashics Librarium - MegapackⅢ<br>
 
 ## 課題今後実装したい機能
 - キャラの作成
