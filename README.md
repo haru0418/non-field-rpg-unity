@@ -34,7 +34,7 @@ C#を使ったことがなかったですがUdemyのサイトを使ってやっ�
 ## 使用技術（開発環境）
 
 ### ソース管理
-Git, GitHub Desktop、　Unity、　sourcetree
+Git, GitHub Desktop、 Unity、 sourcetree
 
 ### エディタ
 Visual Studio
