@@ -22,11 +22,11 @@ C#を使ったことがなかったですがUdemyのサイトを使ってやっ�
 
 # クエスト
 
-![](https://user-images.githubusercontent.com/77143892/112741182-463ea180-8fbe-11eb-991f-6720f4a1eda9.mp4
+
 
 # バトル風景
 
-
+<img width="234" alt="バトル画像" src="https://user-images.githubusercontent.com/77143892/112748205-4017e780-8ff5-11eb-94b3-4584d5c9ea0c.png">
 
 
 
