@@ -29,7 +29,8 @@ BGMも流れています。
 # バトル風景
 <img width="234" alt="バトル画像" src="https://user-images.githubusercontent.com/77143892/112748205-4017e780-8ff5-11eb-94b3-4584d5c9ea0c.png">
 クエストのモンスターに遭遇した時のバトル画面です。<br>
-モンスターをタッチしたら攻撃でき、その後にモンスターから反撃がきます。
+モンスターをタッチしたら攻撃でき、その後にモンスターから反撃がきます。<br>
+攻撃時にエフェクトが出る様にしています。モンスターから攻撃された時は画面が振動する様にしています。
 
 
 
@@ -41,6 +42,12 @@ Git, GitHub Desktop、 Unity、 sourcetree
 
 ### エディタ
 Visual Studio
+
+### Asset
+Cartoon FX Free
+DOTween (HOTween v2)
+Fantasy Wooden GUI : Free
+Aekashics Librarium - MegapackⅢ
 
 ## 課題今後実装したい機能
 - キャラの作成
