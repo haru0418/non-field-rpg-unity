@@ -22,7 +22,7 @@ C#を使ったことがなかったですがUdemyのサイトを使ってやっ�
 
 # クエスト
 
-![02a5fc7fd83ff2cd16bb0c4f3632c5d8](https://user-images.githubusercontent.com/77143892/112741182-463ea180-8fbe-11eb-991f-6720f4a1eda9.mp4
+![](https://user-images.githubusercontent.com/77143892/112741182-463ea180-8fbe-11eb-991f-6720f4a1eda9.mp4
 
 # バトル風景
 
