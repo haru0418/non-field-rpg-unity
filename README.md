@@ -24,6 +24,7 @@ C#を使ったことがなかったですがUdemyのサイトを使ってやっ�
 # クエスト
 <img width="235" alt="街gyazo" src="https://user-images.githubusercontent.com/77143892/112748230-689fe180-8ff5-11eb-88fe-5e48a3b2bebf.png">
 - タイトルの『はじまる』を押せば、街の画面にいけてここからクエストに行ける様になっています。
+- BGMも流れています。
 
 # バトル風景
 <img width="234" alt="バトル画像" src="https://user-images.githubusercontent.com/77143892/112748205-4017e780-8ff5-11eb-94b3-4584d5c9ea0c.png">
