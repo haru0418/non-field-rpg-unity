@@ -22,7 +22,7 @@ C#を使ったことがなかったですがUdemyのサイトを使ってやっ�
 
 # クエスト
 
-
+<img width="235" alt="街gyazo" src="https://user-images.githubusercontent.com/77143892/112748230-689fe180-8ff5-11eb-88fe-5e48a3b2bebf.png">
 
 # バトル風景
 
